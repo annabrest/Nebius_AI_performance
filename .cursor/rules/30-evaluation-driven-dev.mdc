@@ -1,0 +1,28 @@
+---
+description: Evaluation-driven development mindset (course-wide; narrow via globs later if needed)
+alwaysApply: true
+---
+
+# Evaluation-driven development
+
+Treat evaluation as the decision framework. Repo-wide default; especially relevant for rubric, human eval, and judge workflows under Module 1.
+
+## Rules
+- Do not propose prompt or model changes without naming the expected failure mode they address.
+- Compare changes against a baseline.
+- Prefer the same evaluation sample when comparing experiments.
+- Track quality, cost, and latency together.
+- For judge work, emphasize rubric alignment and grounding.
+
+## Required analysis style
+When evaluating results, report:
+- what improved
+- what got worse
+- likely failure buckets
+- whether the change is worth the trade-off
+
+## Important
+- Do not chase a single metric blindly.
+- Do not treat pass rate as the only signal.
+- Connect experiments to specific criteria such as grounding, tone, or length.
+- Point out when a change may improve one criterion but hurt another.

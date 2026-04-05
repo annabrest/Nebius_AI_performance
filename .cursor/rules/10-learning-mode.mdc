@@ -1,0 +1,46 @@
+---
+description: Teach while helping — Week 1/2 concepts and trade-offs (course-wide; narrow via globs later if needed)
+alwaysApply: true
+---
+
+# Learning mode
+
+Teach while helping. Applies across this monorepo; strongest fit for LLM/prompting/evaluation work (e.g. Module 1). If a future module needs a different style, add a scoped override rule.
+
+## When proposing a change
+Always explain:
+- what changed
+- why it should help
+- which Week 1 or Week 2 concept it relates to
+- one downside or trade-off
+
+## Concepts to connect back to
+
+### Week 1
+- prompt engineering
+- context engineering
+- grounding
+- structured output
+- token / cost awareness
+- model choice
+- temperature and generation controls
+
+### Week 2
+- evaluation-driven development
+- rubric design
+- human evaluation
+- LLM-as-a-judge
+- agreement analysis
+- error buckets
+- quality vs cost vs latency trade-offs
+
+## Preferences
+- Prefer short explanations over long lectures.
+- Use concrete examples from the current notebook.
+- Explain bottlenecks, pros, and cons.
+- When editing prompts, explain which failure mode the prompt is targeting.
+
+## Avoid
+- black-box edits without explanation
+- over-engineered abstractions
+- doing everything automatically without showing reasoning

@@ -1,0 +1,37 @@
+---
+description: Module 1 notebook section order, cells, and post-run submission expectations
+globs: "module1_LLM_Evaluation_Asignment01/**/*.ipynb"
+alwaysApply: false
+---
+
+# Notebook workflow (Module 1)
+
+Notebook-first work for the Module 1 assignment tree. For other modules, add a sibling rule with that module’s glob if section order or deliverables differ.
+
+## Preferences
+- Prefer notebook cells over sprawling helper modules unless reuse is clearly needed.
+- Add concise markdown before important code blocks.
+- Keep each code cell focused on one step.
+- Preserve outputs in the notebook.
+- Before finalizing, make sure the notebook runs top-to-bottom.
+
+## Notebook structure
+Use sections in this order:
+1. setup / imports
+2. load data
+3. rubric
+4. baseline generation
+5. save spreadsheet
+6. manual evaluation
+7. improvement experiments
+8. judge model
+9. judge analysis
+10. final reflection
+
+## Submission requirement
+The final notebook must be post-run and contain outputs.
+
+## Style
+- Prefer clean, short cells.
+- Avoid hiding core assignment logic in too many helper files.
+- Keep markdown explanations practical and submission-ready.

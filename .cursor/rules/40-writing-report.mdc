@@ -1,0 +1,32 @@
+---
+description: Clear experiment and reflection writeups (course-wide; narrow via globs later if needed)
+alwaysApply: true
+---
+
+# Report writing
+
+Write in a clear, engineering-focused style. Useful anywhere in the monorepo; aligns with Module 1 submission sections when working there.
+
+## Preferences
+- Prefer short sections with explicit headings.
+- Use concrete statements, not vague claims.
+- For every experiment include:
+  - what changed
+  - why it was expected to help
+  - what happened
+  - pros
+  - cons
+
+## For judge-model sections
+Always mention:
+- why explanation comes before verdict
+- likely judge biases
+- why sanity check is necessary
+- trade-offs vs human evaluation
+
+## For reflections
+Include:
+- what the assignment taught from Week 1
+- what the assignment taught from Week 2
+- what bottlenecks were encountered
+- what would be recommended in production

@@ -1,0 +1,25 @@
+---
+description: Monorepo layout for Nebius course work and how Cursor rules are scoped
+alwaysApply: true
+---
+
+# Monorepo + Cursor rules
+
+This workspace is a **course monorepo**: several modules may live side by side under the repo root.
+
+## How rules are scoped
+
+| Rules | Scope | Rationale |
+|-------|--------|-----------|
+| `00-project`, `20-notebook-workflow` | `module1_LLM_Evaluation_Asignment01/**` | Notebook submission and assignment-specific workflow for Module 1. |
+| `10-learning-mode`, `30-evaluation-driven-dev`, `40-writing-report` | Entire workspace (`alwaysApply`) | Generic course habits (teach while helping, EDD, clear writeups); useful in other modules until you replace or narrow them. |
+
+## Adding another module later
+
+1. **New assignment folder** (e.g. `module2_*/`): add a new `.mdc` with `globs: "module2_*/**"` (or the exact folder name) for deliverables, stack, and structure that differ from Module 1.
+2. **Reuse Module 1 rules**: copy `00-project.mdc` to something like `module2-project.mdc`, edit paths and commands, and set that file’s `globs` to the new module only.
+3. **Stop generic rules in a module**: set `alwaysApply: false` on `10`/`30`/`40` and list explicit `globs` for only the folders where they should apply—or add a short override rule at the top of the stack for that module (Cursor applies matching rules together).
+
+## Skills
+
+Project skills under `.cursor/skills/` are **shared**; their descriptions name Module 1 first. Add sibling skills (or extend descriptions with extra paths) when another module needs different workflows.

@@ -1,0 +1,38 @@
+---
+description: Module 1 LLM evaluation assignment — context, deliverables, conda/Jupyter
+globs: "module1_LLM_Evaluation_Asignment01/**"
+alwaysApply: false
+---
+
+# Assignment context (Module 1)
+
+**Scope:** `module1_LLM_Evaluation_Asignment01/`. For a parallel assignment in another folder, duplicate this rule with updated `globs` and paths. See `05-monorepo.mdc`.
+
+This folder targets a Nebius AI performance engineering assignment submitted as a Jupyter notebook with outputs preserved.
+
+## Primary goals
+1. Produce a correct, runnable notebook for submission.
+2. Help the student learn the Week 1 and Week 2 course material while building it.
+
+## Working style
+- Prefer small, auditable changes.
+- Before major edits, briefly state the plan.
+- When making design choices, explain trade-offs in plain English.
+- Do not optimize for speed alone; optimize for learning and correctness.
+- Keep the notebook understandable for someone who will review it later.
+
+## Deliverables
+- A notebook that runs top-to-bottom.
+- Saved outputs embedded in the notebook.
+- Clear markdown explanations for rubric, baseline, improvements, judge design, and analysis.
+
+## Commands
+Use these when relevant:
+- `conda activate assignment01`
+- `python -m ipykernel install --user --name assignment01 --display-name "Python (assignment01)"`
+- `jupyter notebook`
+
+## Constraints
+- The final deliverable is a post-run `.ipynb` file with outputs visible.
+- Prefer notebook-first work over building a large Python package.
+- Keep code readable for a student still learning the material.
